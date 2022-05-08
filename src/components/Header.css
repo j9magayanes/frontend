@@ -1,0 +1,536 @@
+.header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 5rem;
+    color: white;
+    padding-top: .5rem;
+    font-family: Inter;
+  }
+  .h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .logo {
+    padding: 1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .background {
+    background-color: #7BA6D3;
+    width: 100%;
+  }
+  .search {
+    background-color: #7BA6D3;
+    border-radius: 3rem;
+    margin: 2rem;
+    height: 4rem;
+    padding-top: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .searchBar {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .carousel {
+    width: 70rem;
+  }
+  .news {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .headlineBox {
+    width: 80rem;
+  }
+  .newsBox {
+    overflow:scroll; 
+    height:20rem;
+  }
+  p.carouselContent {
+    text-decoration-color: white;
+  }
+  .carouselImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+  }
+  .carouselContents {
+    vertical-align: center;
+    text-align: justify;
+    width: 50rem;
+    overflow:scroll; 
+    height: 21rem;
+    text-decoration-color: white;
+    color: black;
+    font-family: Inter;
+  }
+  .carouselHeadline {
+    margin-left: 50rem;
+    color: black;
+    text-decoration-color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: Inter;
+  }
+  .carouselContent{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: Inter;
+    color: black;
+    text-decoration: none;
+    width: 72rem;
+    font-size: 1rem;
+  }
+  .newsList {
+    background-color: #f3f3f3;
+    border-radius: 2rem;
+    height: 10rem;
+    display: inline-block;
+    text-align: justify;
+    font-family: Inter;
+    width: 100rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .newsListImage {
+    width: 9rem;
+    height: 10rem;
+    border-radius: 10px;
+  }
+  .newsListContents {
+    vertical-align: top;
+    text-align: justify;
+    height: 5px;
+    text-overflow: ellipsis;
+    font-family: Inter;
+  }
+  .newsListHeadline {
+    margin-left: 5rem;
+    margin-right: 3rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-family: Inter;
+  }
+  .newsListContent {
+    font-family: Inter;
+  }
+  .popUp {
+    width: 80em;
+    height: 50rem;
+    align-items: center;
+    display: block;
+    font-family: Inter;
+  }
+  .screen {
+    vertical-align: middle;
+    text-align: justify;
+    font-family: Inter;
+    align-items: center;
+    justify-content: center;
+    width: 80rem;
+  }
+  .screenImage {
+    width: 18rem;
+    height: 18rem;
+    align-items: center;
+  }
+  .headline {
+    font-size: 20px;
+    font-weight: 30px;
+    width: 80rem;
+    font-family: Inter;
+  }
+  .newsContent {
+    font-size: 15px;
+    width: 80rem;
+    font-family: Inter;
+  }
+  .option {
+    font-family: Inter;
+    padding: .5rem;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .form {
+    color: white;
+  }
+  @media all and (max-width: 300px){
+    .header{
+      display: none;
+    }
+  .newsListHeadline{
+    margin-left: 6rem;
+    margin-top: 6rem;
+    width: 6rem;
+  }
+  .newsListImage {
+    height: 8rem;
+    width: 7rem;
+  }
+  .newsListImage {
+    height: 10rem;
+  }
+  }
+  @media all and (min-width: 301px){
+    .header{
+      display: none;
+    }
+    .newsListImage {
+      height: 10rem;
+    }
+    .newsListHeadline{
+      margin-top: 10rem;
+      padding-top:  2.5rem;
+      margin-left: 6rem;
+      width: 60%;
+    }
+  }
+  @media all and (max-width: 475px){
+    .newsListContent{
+      display: none;
+    } 
+  }
+  @media all and (min-width: 476px){
+    .header{
+      display: none;
+    }
+    .newsListImage {
+      height: 13rem;
+      width: 8rem;
+    }
+    .newsListHeadline{
+      margin-top: 1rem;
+      margin-left: 4rem;
+      padding-top: 0.5rem;
+    }
+    .newsListContent {
+      margin-left: 4rem;
+      font-size: .8rem;
+      padding-right: .5rem;
+    }
+    .newsList { 
+      height: 13rem;
+    }
+  }
+  @media all and (max-width: 600px){
+    .header{
+      display: none;
+    }
+    .carousel {
+      width: 15rem;
+    }
+    .popUp {
+      width: 20em;
+      height: 60rem;
+      align-items: center;
+      display: block;
+      font-family: Inter;
+    }
+    .carouselImage {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 10px;
+    }
+    .carouselContents {
+      vertical-align: center;
+      text-align: justify;
+      width: 10rem;
+      overflow:scroll; 
+      height: 6rem;
+      text-decoration-color: white;
+      color: black;
+      font-family: Inter;
+  }
+  .carouselHeadline {
+    margin-left: 5rem;
+    margin-right: 1rem;
+    vertical-align: center;
+    width: 10rem;
+    text-align: justify;
+    color: black;
+    text-decoration-color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: Inter;
+  }
+  .carouselContent{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: Inter;
+    color: black;
+    text-decoration: none;
+    width: 10rem;
+    font-size: .8rem;
+  }
+  }
+  @media all and (max-width: 659px) {
+    .newsListHeadline  {
+      font-size: 1rem;
+      margin-top: 6rem;
+    }
+    .newsListContent {
+      font-size: 1rem;
+    }
+    .search{
+      font-size: 1rem;
+      height: 2rem;
+      margin: .8rem;
+    }
+  }
+  @media all and (min-width: 651px) {
+    .newsListHeadline  {
+      font-size: 1rem;
+    }
+    .newsListContent {
+      font-size: 1rem;
+    }
+    .newsListImage {
+      width: 9rem;
+    }
+    .search {
+      height: 2.5rem;
+      margin: 1rem;
+      padding: 0.5;
+      font-size: 1.5rem;
+    }
+  
+  }
+  @media all and (min-width: 750px) {
+    .newsListImage {
+      width: 10rem;
+    }
+    .newsListHeadline  {
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+    .newsListContent {
+      font-size: 1rem;
+    }
+  }
+  @media all and (min-width: 772px) {
+    .newsListHeadline{
+      font-size: 1.3rem;
+    }
+    .newsListContent{
+      font-size: 1rem;
+    }
+  }
+  @media all and (max-width: 959px) {
+    .newsListImage{
+      margin: 0;
+    }
+    .newsListHeadline{
+      margin-top: 0;
+    }
+    .carousel {
+      width: 15rem;
+    }
+    .popUp {
+      width: 20em;
+      height: 60rem;
+      align-items: center;
+      display: block;
+      font-family: Inter;
+    }
+    .carouselImage {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 10px;
+    }
+    .carouselContents {
+      vertical-align: center;
+      text-align: justify;
+      width: 10rem;
+      overflow:scroll; 
+      height: 6rem;
+      text-decoration-color: white;
+      color: black;
+      font-family: Inter;
+  }
+  .carouselHeadline {
+    margin-left: 5rem;
+    margin-right: 1rem;
+    vertical-align: center;
+    width: 10rem;
+    text-align: justify;
+    color: black;
+    text-decoration-color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: Inter;
+  }
+  .carouselContent{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: Inter;
+    color: black;
+    text-decoration: none;
+    width: 10rem;
+    font-size: .8rem;
+  }
+  }
+  
+  @media all and (min-width: 960px) {
+    .newsListImage{
+      width: 10rem;
+      height: 14rem;
+    }
+    .newsList{
+      height: 14rem;
+    }
+  }
+  @media all and (min-width: 961px) {
+    .newsListImage {
+      height: 14rem;
+    }
+  }
+  @media all and (min-width: 1100px) {
+    .newsListHeadline  {
+      font-size: 1.3rem;
+    }
+    .newsListContent {
+      font-size: 1rem;
+    }
+    .newsListImage {
+      height: 14rem;
+    }
+    .carouselHeadline{
+      width: 30rem;
+    }
+    .carouselContent{
+      width: 30rem;
+    }
+  }
+  @media all and (min-width: 1240px) {
+    .newsListHeadline  {
+      font-size: 1rem;
+    }
+    .newsListContent {
+      font-size: 1rem;
+    }
+    .newsListImage {
+      width: 100%;
+      height: 14rem;
+    }
+  }
+  
+  @media all and (min-width: 1241px) {
+    .newsListImage {
+      width: 100%;
+      height: 14rem;
+    }
+    .newsListHeadline {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media all and (min-width: 1280px) {
+    .search {
+      font-size: 1.5rem;
+    }
+    .newsListHeadline  {
+      font-size: 1.1rem;
+    }
+    .newsListImage {
+      width: 7rem;
+      height: 10rem;
+    }
+    .newsListContent {
+      display: none;
+    }
+    .newsList{
+      height: 10rem;
+    }
+  }
+  @media all and (min-width: 1478px) {
+    .newsListImage {
+      width: 9rem;
+      height: 10rem;
+    }
+  }
+  
+  
+  @media all and (min-width: 1690px) {
+    .newsListImage {
+      width: 10rem;
+      height: 10rem;
+    }
+    .newsListHeadline {
+      margin-top: 1.5rem;
+    }
+  }
+  @media all and (min-width: 1920px) {
+    .newsListImage {
+      width: 11rem;
+      height: 12rem;
+    }
+    .newsListHeadline {
+      margin-top: 0.5rem;
+    }
+    .newsListContent {
+      font-size: .8rem;
+      margin-left: 4rem;
+      display:grid;
+    }
+    .newsList {
+      height: 12rem;
+    }
+  }
+  @media all and (min-width: 2528px) {
+    .newsListContent {
+      font-size: 1rem;
+    }
+    .newsListImage {
+      width: 13rem;
+      height: 14rem;
+    }
+    .newsList {
+      height: 14rem;
+    }
+  }
+  @media all and (min-width: 3572px) {
+    .newsListContent {
+      font-size: 1rem;
+    }
+  }
+  @media all and (min-width: 4070px) {
+    .newsListHeadline  {
+      margin-top: 0;
+      padding-top: .5rem;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .newsListImage {
+      padding-right: 0;
+      margin-right: 0;
+      height: 12rem;
+    }
+  }
+  .MuiSelect-select.MuiSelect-select {
+    padding:0;
+    margin: 0;
+    color:white;
+    font-size: 1rem;
+    background: transparent;
+    border-color: white;
+    color: white;
+  }
+  .MuiGrid-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  
+  }
+  .MuiGrid-item {
+    margin-bottom: 1rem;
+  }
+  

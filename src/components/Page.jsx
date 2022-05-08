@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
-import CovidMap from "./CovidMap";
+import Map from "./Map";
 import Legend from "./Legend";
+import Header from "./Header";
 import LoadCountriesTask from "../tasks/LoadCountriesTask";
 
-const Covid19 = () => {
+const Page = () => {
   const [countries, setCountries] = useState([]);
   const load = () => {
     const loadCountriesTask = new LoadCountriesTask();
@@ -17,9 +18,10 @@ const Covid19 = () => {
       {countries.length === 0 ? (
         <Loading />
       ) : (
-        <div>
+        <div>     
+           <Header />
           <div>
-            <CovidMap />
+            <Map />
             <Legend />
           </div>
         </div>
@@ -28,4 +30,4 @@ const Covid19 = () => {
   );
 };
 
-export default Covid19;
+export default Page;
