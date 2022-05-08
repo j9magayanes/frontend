@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Legend = () => {
-    return <div>Legend</div>;
+    return <div>Test</div>;
 };
 
 export default Legend;
