@@ -6,7 +6,7 @@ export const useEarthquakeData = () => {
 
   useEffect(() => {
     fetch(
-      "http://localhost:8081/api/data/money")
+      "https://immense-inlet-95240.herokuapp.com/api/data/money")
                   .then((res) => res.json())
                   .then((json) => {
                       setData({
@@ -22,7 +22,7 @@ export const useEarthquakeAverage = () => {
 
   useEffect(() => {
     fetch(
-      "http://localhost:8081/api/data/money/average")
+      "https://immense-inlet-95240.herokuapp.com/api/data/money/average")
                   .then((res) => res.json())
                   .then((json) => {
                       setData({
