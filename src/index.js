@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { compose, createStore, combineReducers} from "redux";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { categoryReducer, countryReducer, dataReducer } from "./rootReducer";
+import { Provider } from 'react-redux';
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(combineReducers({categoryReducer, countryReducer, dataReducer}), composeEnhancers());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+        <Provider store={store}>
+    <App /></Provider>
+    
   </React.StrictMode>
 );
 

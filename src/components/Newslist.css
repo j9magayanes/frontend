@@ -1,0 +1,63 @@
+
+
+  .h2 {
+    background-color: pink;
+      padding: 0;
+      margin:0;
+      width: 70vw;
+      height: 100vh;
+  }
+
+  .button {
+    font-family: Inter;
+    color: #7BA6D3;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: .5rem;
+  }
+.scroll {
+  overflow:scroll; 
+  height:45rem;
+}
+@media all and (min-height: 780px) {
+  .scroll {
+    overflow:scroll; 
+    height:50rem;
+  }
+}
+@media all and (min-height: 830px) {
+  .scroll {
+    overflow:scroll; 
+    height:55rem;
+  }
+}
+@media all and (min-height: 977px) {
+  .scroll {
+    overflow:scroll; 
+    height:60rem;
+  }
+}
+@media all and (min-height: 1020px) {
+  .scroll {
+    overflow:scroll; 
+    height:65rem;
+  }
+}
+@media all and (min-height: 1133px) {
+  .scroll {
+    overflow:scroll; 
+    height:70rem;
+  }
+}
+@media all and (min-height: 1218px) {
+  .scroll {
+    overflow:scroll; 
+    height:75rem;
+  }
+}
+@media all and (min-height: 1300px) {
+  .scroll {
+    overflow:scroll; 
+    height:78rem;
+  }
+}

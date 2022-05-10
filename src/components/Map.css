@@ -1,0 +1,14 @@
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #aad3df;
+  }
+.newsImage {
+  height: 10rem;
+  width:16rem;
+}
+
+.circle {
+  color:red;
+}
