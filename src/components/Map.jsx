@@ -8,18 +8,18 @@ import { Button } from "@mui/material";
 import { categoryReducer, dataReducer } from "../rootReducer";
 import { useCarbonData } from "../useCarbonData";
 import { useWildfireData } from "../useWildfireData";
-import { useEarthquakeData, useEarthquakeAverage } from "../useEarthquakeData";
+import { useEarthquakeData, useEarthquakeAverage } from "../useEarthquakeData"; 
 import { useNewsData } from "../useNewsData";
 
 function Map() {
   const dispatch = useDispatch();
   const store = useStore();
   const category = useSelector(() => store.getState().categoryReducer.category);
-  const carbonData= useCarbonData();
+  const carbonData = useCarbonData();
   const newsData = useNewsData();
   const wildfireData = useWildfireData();
   const earthquakeData = useEarthquakeData();
-  const carbonAverage = 229.92;
+  const carbonAverage  = 229.92;
   const wildfireAverage = 325.73;
   const moneyAverage = 124.45;
   const datas = [];
@@ -90,12 +90,7 @@ function Map() {
       ]}
       bounceAtZoomLimits={false}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        noWrap={true}
-        minZoom={2}
-      />
+
       {datas.map((news) => (
         <Circle
           center={[news.lat, news.long]}
@@ -140,8 +135,7 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps)(Map);
 function news(
-  news
-) {
+  news ){
   throw new Error("Function not implemented.");
 }
 
